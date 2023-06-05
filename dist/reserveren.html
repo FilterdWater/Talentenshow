@@ -8,7 +8,7 @@
   <!--custom css-->
   <link rel="stylesheet" href="custom.css">
 
-
+  <title>Reserveren | TalentenShow</title>
   <style>
     body{
       background-color: #ffffff;
@@ -41,13 +41,11 @@
   ```
 -->
 <header class="absolute inset-x-0 top-0 z-50">
-  <nav class="fixed top-0 w-full flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+  <nav class="fixed top-0 w-full flex items-center justify-between p-3 lg:px-8 bg-gray-50" aria-label="Global">
     <div class="flex lg:flex-1">
       <a href="index.html" class="-m-1.5 p-1.5">
         <span class="sr-only">Logo</span>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-        </svg>
+        <div class="font-semibold select-none">✨ TalentenShow 2023 ✨</div>
       </a>
     </div>
     <div class="flex lg:hidden">
@@ -59,12 +57,22 @@
       </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
-      <a href="index.html" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
-      <a href="aanmelden.html" class="text-sm font-semibold leading-6 text-gray-900">Aanmelden</a>
-      <a href="reserveren.html" class="text-sm font-semibold leading-6 text-gray-900">Reserveer</a>
+      <a href="index.html" class="font-semibold border-b-2 border-transparent hover:border-current cursor-pointer select-none">Home</a>
+      <a href="aanmelden.html" class="font-semibold border-b-2 border-transparent hover:border-current cursor-pointer select-none text-gray-900">Aanmelden</a>
+      <a href="reserveren.html" class="font-semibold border-b-2 border-purple-600 hover:border-current cursor-pointer select-none text-gray-900">Reserveer</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <a href="reserveren.html" class="text-sm font-semibold leading-6 text-gray-900">... <span aria-hidden="true">&rarr;</span></a>
+      <a href="info.html" class="text-sm font-semibold leading-6 text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 border-b-2 border-transparent hover:border-current cursor-pointer select-none text-gray-900">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+      </svg>
+      </a>
+      <a href="admin.html">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 border-b-2 border-transparent hover:border-current cursor-pointer select-none text-gray-900">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>   
+        </a>           
+      </div>
+    </nav>
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
@@ -94,7 +102,10 @@
             <a href="aanmelden.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Reserveer</a>
           </div>
           <div class="py-6">
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">...</a>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+            </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -123,23 +134,6 @@
         </div>
       </div>
 
-      <div>
-        <div class="flex items-center justify-between">
-          <label for="adres" class="block text-sm font-medium leading-6 text-gray-900">Adres</label>
-        </div>
-        <div class="mt-2">
-          <input id="adres" name="adres" type="adres" autocomplete="current-adres" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-        </div>
-      </div>
-
-      <div>
-        <div class="flex items-center justify-between">
-          <label for="woonplaats" class="block text-sm font-medium leading-6 text-gray-900">Woonplaats</label>
-        </div>
-        <div class="mt-2">
-          <input id="woonplaats" name="woonplaats" type="woonplaats" autocomplete="current-woonplaats" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-        </div>
-      </div>
 
       <div>
         <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
