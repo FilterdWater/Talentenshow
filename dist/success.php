@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | TalentenShow</title>
     <link rel="stylesheet" href="output.css">
 
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    
+    <title>Success</title>
 </head>
 <body>
-    <div class="bg-white">
-        <header class="absolute inset-x-0 top-0 z-50">
+<header class="absolute inset-x-0 top-0 z-50">
           <nav class="fixed top-0 w-full flex items-center justify-between p-3 lg:px-8 bg-gray-50" aria-label="Global">
             <div class="flex lg:flex-1">
               <a href="#" class="-m-1.5 p-1.5">
@@ -31,7 +29,7 @@
               </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-              <a href="index.html" class="font-semibold border-b-2 border-purple-600 hover:border-current cursor-pointer select-none">Home</a>
+              <a href="index.html" class="font-semibold border-b-2 border-transparent hover:border-current cursor-pointer select-none">Home</a>
               <a href="aanmelden.html" class="font-semibold border-b-2 border-transparent hover:border-current cursor-pointer select-none text-gray-900">Aanmelden</a>
               <a href="reserveren.html" class="font-semibold border-b-2 border-transparent hover:border-current cursor-pointer select-none text-gray-900">Reserveer</a>
             </div>
@@ -70,7 +68,7 @@
               <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/10">
                   <div class="space-y-2 py-6">
-                    <a href="index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold border-b-2 border-purple-600 hover:border-current cursor-pointer select-none text-gray-900">Home</a>
+                    <a href="index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold border-b-2 border-transparent hover:border-current cursor-pointer select-none text-gray-900">Home</a>
                     <a href="reserveren.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold border-b-2 border-transparent hover:border-current cursor-pointer select-none text-gray-900">Aanmelden</a>
                     <a href="aanmelden.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold border-b-2 border-transparent hover:border-current cursor-pointer select-none text-gray-900">Reserveer</a>
                   </div>
@@ -85,42 +83,29 @@
             </div>
           </div>
         </header>
-      
-        <div class="relative isolate px-6 pt-14 lg:px-8">
-    
-          <div class="mx-auto max-w-2xl py-16 sm:py-48 lg:py-16">
+
+        <div class="mx-auto max-w-2xl py-16 sm:py-48 lg:py-16">
             <div class="text-center">
-              <div class="bg-white p-8 rounded-lg">
-                <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mb-10">Talenten show 2023 Ede.</h1>
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Word De Ster van Ede!</h2>
+              <div class="bg-white p-8 rounded-lg mt-12">
+                <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mb-10">Success!</h1>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Je info is doorgestuurd</h2>
                 <p class="text-lg text-gray-900 mb-10">
-                  Heb jij een ongelooflijk talent dat de wereld moet zien? Grijp dan nu je kans om schitterend te stralen op het podium van de Talenten Show van 2023 in Ede! Dit is dé kans om je talent te tonen, je dromen waar te maken en de harten van mensen te veroveren.
+                Wij kunnen nu zien dat jij op komt dagen
                 </p>
                 <ul class="text-gray-900">
                   <li class="mb-5">
     
-                    <span class="text-lg">🎤 Zing jij als een nachtegaal? 🎤</span>
+                    <span class="text-lg">Weet je nog niet waar het is?</span>
+
+                    <div class="mt-2 flex items-center justify-center gap-x-6">
+                     <a href="info.html" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500">Bekijk de info pagina</a>
+                   </div>
                   </li>
                   <li class="mb-5">
-    
-                    <span class="text-lg">💃 Heb je dansmoves waar niemand omheen kan? 💃</span>
-                  </li>
-                  <li class="mb-5">
-    
-                    <span class="text-lg">🎭 Bezit jij het acteertalent van een ster? 🎭</span>
-                  </li>
-                  <li class="mb-5">
-    
-                    <span class="text-lg">🎶 Of weet je hoe je mensen betovert met je muzikale vaardigheden? 🎶</span>
-                  </li>
-                </ul>
-                <p class="text-gray-900 mt-10">
-                  Wacht niet langer! En meld je vandaag nog aan. Bereid je voor op een onvergetelijke ervaring, waarin je jouw talent naar nieuwe hoogten kunt tillen en de erkenning krijgt die je verdient.
-                </p>
             </div>
           </div>
     
         </div>
-      </div>
+
 </body>
 </html>
